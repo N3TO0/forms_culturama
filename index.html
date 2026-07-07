@@ -19,11 +19,18 @@
           <fieldset>
             <legend>Dados Pessoais</legend>
 
-            <label  for="idName">Nome</label>
+            <label for="idName">Nome</label>
             <input id="idName" type="text" name="userName" required />
             <br />
             <label for="idAge">Idade</label>
-            <input id="idAge" type="number" min="12" max="100" name="userAge" required />
+            <input
+              id="idAge"
+              type="number"
+              min="12"
+              max="100"
+              name="userAge"
+              required
+            />
             <br />
             <label for="idBirth">Data de nascimento</label>
             <input id="idBirth" type="date" name="birthDate" />
@@ -51,103 +58,179 @@
 
             <p>Gênero</p>
 
-            <input id="idGander1" type="radio" name="userGander" value="Masculino" />
+            <input
+              id="idGander1"
+              type="radio"
+              name="userGander"
+              value="Masculino"
+            />
             <label for="idGander1">Masculino</label>
 
-            <input id="idGander2" type="radio" name="userGander" value="Feminino" />
+            <input
+              id="idGander2"
+              type="radio"
+              name="userGander"
+              value="Feminino"
+            />
             <label for="idGander2">Feminino</label>
 
-            <input id="idGander3" type="radio" name="userGander" value="notInformed" />
+            <input
+              id="idGander3"
+              type="radio"
+              name="userGander"
+              value="notInformed"
+            />
             <label for="idGander3">Prefiro não informar</label>
 
-            <br>
+            <br />
 
             <label for="idMaritalStatus">Estado civil:</label>
-              <select id="idMaritalStatus" name="maritalStatus">
+            <select id="idMaritalStatus" name="maritalStatus">
               <option value="notInformed">Selecione..</option>
               <option value="solteiro">Solteiro</option>
               <option value="casado">Casado</option>
               <option value="viuvo">Viuvo</option>
               <option value="divorciado">Divorciado</option>
             </select>
-            
-            <br>
+
+            <br />
 
             <label for="idUserState">Estado</label>
-              <select id="idUserState" name="userState" required>
-                <option value="notInformed">Selecione..</option>
-                <option value="AC">AC</option>
-                <option value="AL">AL</option>
-                <option value="AP">AP</option>
-                <option value="AM">AM</option>
-                <option value="BA">BA</option>
-                <option value="CE">CE</option>
-                <option value="DF">DF</option>
-                <option value="ES">ES</option>
-                <option value="GO">GO</option>
-                <option value="MA">MA</option>
-                <option value="MS">MS</option>
-                <option value="MT">MT</option>
-                <option value="MG">MG</option>
-                <option value="PA">PA</option>
-                <option value="PB">PB</option>
-                <option value="PR">PR</option>
-                <option value="PE">PE</option>
-                <option value="PI">PI</option>
-                <option value="RJ">RJ</option>
-                <option value="RN">RN</option>
-                <option value="RS">RS</option>
-                <option value="RO">RO</option>
-                <option value="RR">RR</option>
-                <option value="SC">SC</option>
-                <option value="SP">SP</option>
-                <option value="SE">SE</option>
-                <option value="TO">TO</option>
-              </select>
-            
-            <label for="idUserCity">Cidade</label>
-            <input id="idUserCity" type="text" name="userCity">
+            <select id="idUserState" name="userState" required>
+              <option value="notInformed">Selecione..</option>
+              <option value="AC">AC</option>
+              <option value="AL">AL</option>
+              <option value="AP">AP</option>
+              <option value="AM">AM</option>
+              <option value="BA">BA</option>
+              <option value="CE">CE</option>
+              <option value="DF">DF</option>
+              <option value="ES">ES</option>
+              <option value="GO">GO</option>
+              <option value="MA">MA</option>
+              <option value="MS">MS</option>
+              <option value="MT">MT</option>
+              <option value="MG">MG</option>
+              <option value="PA">PA</option>
+              <option value="PB">PB</option>
+              <option value="PR">PR</option>
+              <option value="PE">PE</option>
+              <option value="PI">PI</option>
+              <option value="RJ">RJ</option>
+              <option value="RN">RN</option>
+              <option value="RS">RS</option>
+              <option value="RO">RO</option>
+              <option value="RR">RR</option>
+              <option value="SC">SC</option>
+              <option value="SP">SP</option>
+              <option value="SE">SE</option>
+              <option value="TO">TO</option>
+            </select>
 
+            <label for="idUserCity">Cidade</label>
+            <input id="idUserCity" type="text" name="userCity" />
           </fieldset>
 
           <fieldset>
             <legend>Habitos</legend>
 
             <p>Redes Sociais</p>
-            <input id="idSocial1" type="checkbox" name="social" value="instagram">
+            <input
+              id="idSocial1"
+              type="checkbox"
+              name="social"
+              value="instagram"
+            />
             <label for="idSocial1">Instagram</label>
-            <br>
-            <input id="idSocial2" type="checkbox" name="social" value="facebook">
+            <br />
+            <input
+              id="idSocial2"
+              type="checkbox"
+              name="social"
+              value="facebook"
+            />
             <label for="idSocial2">Facebook</label>
-            <br>
-            <input id="idSocial3" type="checkbox" name="social" value="linkedin">
+            <br />
+            <input
+              id="idSocial3"
+              type="checkbox"
+              name="social"
+              value="linkedin"
+            />
             <label for="idSocial3">Linkedin</label>
-            <br>
-            <input id="idSocial4" type="checkbox" name="social" value="x">
+            <br />
+            <input id="idSocial4" type="checkbox" name="social" value="x" />
             <label for="idSocial4">X</label>
-            <br>
-            
-            <label for="musicStyle">Estilo musical:</label>
-            <input list="idstyleTypes" id="idMusicaStyle" type="text" name="userMusicStyle">
-            <datalist id="idstyleTypes">
-              <option value="Rock">
-              <option value="Mpb">
-              <option value="Pop">
-              <option value="Samba">
-              <option value="Sertanejo">
-              <option value="K-pop">
-            </datalist>
-            <br>
-            <label for="idFavoriteColor">Cor Favorita</label>
-            <input type="color" name="userFavoriteColor" id="idFavoriteColor">
+            <br />
 
+            <label for="musicStyle">Estilo musical:</label>
+            <input
+              list="idstyleTypes"
+              id="idMusicaStyle"
+              type="text"
+              name="userMusicStyle"
+            />
+            <datalist id="idstyleTypes">
+              <option value="Rock"></option>
+              <option value="Mpb"></option>
+              <option value="Pop"></option>
+              <option value="Samba"></option>
+              <option value="Sertanejo"></option>
+              <option value="K-pop"></option>
+            </datalist>
+            <br />
+            <label for="idFavoriteColor">Cor Favorita</label>
+            <input type="color" name="userFavoriteColor" id="idFavoriteColor" />
           </fieldset>
 
+          <fieldset>
+            <legend>Opinião</legend>
+
+            <p>Satisfação</p>
+
+            <input
+              type="radio"
+              name="satisfaction"
+              id="idSatisfaction"
+              value="otima"
+            />
+            <label for="idSatisfaction1">Ótima</label>
+            <br />
+            <input
+              type="radio"
+              name="satisfaction"
+              id="idSatisfaction"
+              value="boa"
+            />
+            <label for="idSatisfaction2">Boa</label>
+            <br />
+            <input
+              type="radio"
+              name="satisfaction"
+              id="idSatisfaction"
+              value="regular"
+            />
+            <label for="idSatisfaction3">Regular</label>
+            <br />
+            <input
+              type="radio"
+              name="satisfaction"
+              id="idSatisfaction"
+              value="ruim"
+            />
+            <label for="idSatisfaction4">Ruin</label>
+            <br />
+            <label for="idOpinion">Escreva sua opinião:</label>
+            <br />
+            <textarea name="opinion" id="idOpinion"></textarea>
+          </fieldset>
           <button type="submit">Enviar</button>
         </form>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      
+    </footer>
   </body>
 </html>
