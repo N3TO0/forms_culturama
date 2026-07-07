@@ -12,36 +12,108 @@
     <header>
       <h1>Pesquisa Online</h1>
     </header>
+
     <main>
       <section>
         <form action="" method="get">
-            <fieldset>
-                <legend>Dados Pessoais</legend>
+          <!-- <fieldset>
+            <legend>Dados Pessoais</legend>
 
-                <label for="userName">Nome</label>
-                <input type="text" name="userName" required />
-                <br>
-                <label for="userAge">Idade</label>
-                <input type="number" min="12" max="100" name="userAge" required />
-                <br>
-                <label for="birthDate">Data de nascimento</label>
-                <input type="date" name="birthDate" />
-                <br>
-                <label for="userPhone">Numero de telefone</label>
-                <input type="tel" name="userPhone" pattern=""[0-9]{14} placeholder="00 0 0000-0000" required/>
-                <br>
-                <label for="userEmail">E-mail</label>
-                <input type="email" name="userEmail" required />
-                <br>
-                <label for="userImage">Upload de foto</label>
-                <input type="file" name="userImage" />
-            </fieldset>
+            <label for="userName">Nome</label>
+            <input type="text" name="userName" required />
+            <br />
+            <label for="userAge">Idade</label>
+            <input type="number" min="12" max="100" name="userAge" required />
+            <br />
+            <label for="birthDate">Data de nascimento</label>
+            <input type="date" name="birthDate" />
+            <br />
+            <label for="userPhone">Numero de telefone</label>
+            <input
+              type="tel"
+              name="userPhone"
+              pattern=""
+              [0-9]{14}
+              placeholder="00 0 0000-0000"
+              required
+            />
+            <br />
+            <label for="userEmail">E-mail</label>
+            <input type="email" name="userEmail" required />
+            <br />
+            <label for="userImage">Upload de foto</label>
+            <input type="file" name="userImage" />
+          </fieldset> -->
+
+          <fieldset>
+            <legend>Perfil</legend>
+
+            <p>Gênero</p>
+
+            <input type="radio" name="userGander" value="Masculino" />
+            <label for="userGander">Masculino</label>
+
+            <input type="radio" name="userGander" value="Feminino" />
+            <label for="userGander">Feminino</label>
+
+            <input type="radio" name="userGander" value="notInformed" />
+            <label for="userGander">Prefiro não informar</label>
+
+            <br>
+
+            <label for="maritalStatus">Estado civil:</label>
+              <select name="maritalStatus">
+              <option value="notInformed">Selecione..</option>
+              <option value="solteiro">Solteiro</option>
+              <option value="casado">Casado</option>
+              <option value="viuvo">Viuvo</option>
+              <option value="divorciado">Divorciado</option>
+            </select>
+            
+            <br>
+
+            <label for="userState">Estado</label>
+              <select name="suerState" required>
+                <option value="notInformed">Selecione..</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+              </select>
+            
+            <label for="userCity">Cidade</label>
+            <input type="text" name="userCity">
+
+          </fieldset>
 
           <button type="submit">Enviar</button>
-
         </form>
       </section>
     </main>
+
     <footer></footer>
   </body>
 </html>
