@@ -49,9 +49,11 @@
               name="userPhone"
               pattern="[0-9]{11}"
               placeholder="00000000000"
+              aria-describedby="phoneHelp"
             />
+            <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + números sem espaços ou hífen</small>
             <br />
-            <label for="idEmail">E-mail</label>
+            <label class="label_email" for="idEmail">E-mail</label>
             <input id="idEmail" type="email" name="userEmail" required />
             <br />
             <label for="idImage">Upload de foto</label>
