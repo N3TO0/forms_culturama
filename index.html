@@ -1,6 +1,29 @@
 <!doctype html>
 <html lang="pt-br">
   <head>
+    <meta
+      name="description"
+      content="Participe da pesquisa cultural da Culturama em menos de 2 minutos."
+    />
+    <meta name="robots" content="index, follow" />
+    <!-- <meta name="robots" content="noindex, nofollow"/> para n aparecer na busca do google -->
+
+    <!-- Open Graph Padrão --> 
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pesquisa Culturama 2026" />
+    <meta property="og:description" content="Compartilhe sua opinião." />
+    <meta property="og:url" content="https://seusite.com/" />
+    <meta
+      property="og:image"
+      content="https://seusite.com/img/logo-culturama.png"
+    />
+    <!-- tamanho da imagem: 1200 x 630 pixels -->
+    <!-- Para garantir compatibilidade com o Twitter/X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pesquisa Culturama 2026" />
+    <meta name="twitter:description" content="Compartilhe sua opinião." />
+    <meta name="twitter:image" content="https://seusite.com/img/logo-culturama.png" />
+    
     <link rel="stylesheet" href="css/reset.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,13 +72,16 @@
               name="userPhone"
               pattern="[0-9]{11}"
               placeholder="00000000000"
+              aria-describedby="phoneHelp"
             />
+            <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + números sem espaços ou hífen</small>
             <br />
-            <label for="idEmail">E-mail</label>
+            <label class="label_email" for="idEmail">E-mail</label>
             <input id="idEmail" type="email" name="userEmail" required />
             <br />
             <label for="idImage">Upload de foto</label>
-            <input id="idImage" type="file" name="userImage" />
+            <input aria-describedby="imageHelp" id="idImage" type="file" name="userImage" />
+            <small id="imageHelp" >Envie uma foto no formato PNG ou JPEG.</small>
           </fieldset>
 
           <fieldset>
@@ -253,8 +279,8 @@
             >
           </fieldset>
         <div class="buttons">
-          <button type="submit">Enviar</button>
-          <button type="reset">Limpar</button>
+          <button aria-label="enviar dados do formulário" type="submit">Enviar</button>
+          <button aria-label="limpar dados do formulario" type="reset">Limpar</button>
         </div>
         </form>
       </section>
